@@ -1,0 +1,779 @@
+<head><base href="https://d16ilfvy4mv02r.cloudfront.net/workspaces/fjZg7CE9oMN3mIEzjEyJUpBcV6Ud3p6X/2e021499-6975-451f-bfcc-f2523ec28061/files/"></head><!-- ================================================
+   SHOPZONE INDONESIA — Siap Upload ke Blogspot
+   Copy semua kode ini ke HTML Widget Blogspot
+   ================================================ -->
+<style>
+:root{
+  --primer:#6c63ff;
+  --primer-gelap:#5a52d5;
+  --aksen:#ff6584;
+  --bg:#f8f9ff;
+  --kartu:#ffffff;
+  --teks:#2d2d3a;
+  --redup:#7b7b8d;
+  --border:#e8e8f0;
+  --sukses:#2ecc71;
+  --bayangan:0 4px 24px rgba(108,99,255,.10);
+  --radius:16px;
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:'Segoe UI',system-ui,sans-serif;background:var(--bg);color:var(--teks);}
+img{max-width:100%;}
+a{text-decoration:none;}
+
+/* ── BANNER PROMO ── */
+.sz-banner{
+  background:linear-gradient(90deg,#6c63ff,#a78bfa);
+  color:#fff;text-align:center;
+  padding:10px 16px;font-size:.85rem;font-weight:600;
+}
+
+/* ── HEADER ── */
+.sz-header{
+  background:#fff;border-bottom:1px solid var(--border);
+  position:sticky;top:0;z-index:999;
+  box-shadow:0 2px 16px rgba(108,99,255,.07);
+}
+.sz-header-in{
+  max-width:1300px;margin:auto;
+  display:flex;align-items:center;gap:14px;
+  padding:12px 16px;flex-wrap:wrap;
+}
+.sz-logo{font-size:1.6rem;font-weight:900;color:var(--primer);letter-spacing:-1px;}
+.sz-logo span{color:var(--aksen);}
+.sz-search{
+  flex:1;min-width:180px;display:flex;
+  border:2px solid var(--border);border-radius:50px;
+  overflow:hidden;background:var(--bg);
+  transition:border-color .2s;
+}
+.sz-search:focus-within{border-color:var(--primer);}
+.sz-search input{
+  flex:1;border:none;background:transparent;
+  padding:9px 16px;font-size:.93rem;outline:none;color:var(--teks);
+}
+.sz-search button{
+  background:var(--primer);color:#fff;border:none;
+  padding:9px 18px;cursor:pointer;font-size:.95rem;
+}
+.sz-aksi{display:flex;gap:10px;align-items:center;}
+.sz-btn-ikon{
+  position:relative;background:var(--bg);border:none;
+  border-radius:50%;width:42px;height:42px;
+  display:flex;align-items:center;justify-content:center;
+  cursor:pointer;font-size:1.15rem;transition:background .2s;
+}
+.sz-btn-ikon:hover{background:var(--border);}
+.sz-badge{
+  position:absolute;top:-4px;right:-4px;
+  background:var(--aksen);color:#fff;border-radius:50%;
+  width:20px;height:20px;font-size:.65rem;font-weight:700;
+  display:flex;align-items:center;justify-content:center;
+}
+
+/* ── HERO ── */
+.sz-hero{
+  background:linear-gradient(135deg,#6c63ff 0%,#a78bfa 50%,#ff6584 100%);
+  color:#fff;padding:70px 20px;text-align:center;
+  position:relative;overflow:hidden;
+}
+.sz-hero::before{
+  content:'';position:absolute;top:-60px;right:-60px;
+  width:280px;height:280px;border-radius:50%;
+  background:rgba(255,255,255,.08);
+}
+.sz-hero::after{
+  content:'';position:absolute;bottom:-70px;left:-40px;
+  width:220px;height:220px;border-radius:50%;
+  background:rgba(255,255,255,.06);
+}
+.sz-hero h1{font-size:2.6rem;font-weight:900;margin-bottom:14px;letter-spacing:-1px;position:relative;}
+.sz-hero p{font-size:1.1rem;opacity:.9;margin-bottom:28px;position:relative;}
+.sz-hero-btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;position:relative;}
+.sz-btn{
+  padding:13px 30px;border-radius:50px;font-size:.97rem;
+  font-weight:700;cursor:pointer;border:none;
+  transition:transform .15s,box-shadow .15s;
+}
+.sz-btn:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,0,0,.18);}
+.sz-btn-putih{background:#fff;color:var(--primer);}
+.sz-btn-outline{background:transparent;color:#fff;border:2px solid rgba(255,255,255,.75);}
+
+/* ── STATISTIK ── */
+.sz-stats{
+  background:#fff;border-bottom:1px solid var(--border);
+  padding:20px 16px;
+}
+.sz-stats-in{
+  max-width:1300px;margin:auto;
+  display:grid;grid-template-columns:repeat(4,1fr);
+  gap:16px;text-align:center;
+}
+.sz-stat-item h3{font-size:1.6rem;font-weight:900;color:var(--primer);}
+.sz-stat-item p{font-size:.8rem;color:var(--redup);margin-top:2px;}
+
+/* ── SECTION ── */
+.sz-section{max-width:1300px;margin:auto;padding:50px 16px 0;}
+.sz-judul{font-size:1.5rem;font-weight:800;margin-bottom:6px;}
+.sz-sub{color:var(--redup);margin-bottom:28px;font-size:.93rem;}
+
+/* ── KATEGORI ── */
+.sz-kategori{
+  display:flex;gap:14px;overflow-x:auto;
+  padding-bottom:8px;scrollbar-width:none;
+}
+.sz-kategori::-webkit-scrollbar{display:none;}
+.sz-kat-kartu{
+  min-width:110px;background:var(--kartu);
+  border-radius:var(--radius);padding:18px 14px;
+  text-align:center;cursor:pointer;flex-shrink:0;
+  border:2px solid var(--border);transition:all .2s;
+}
+.sz-kat-kartu:hover,.sz-kat-kartu.aktif{border-color:var(--primer);background:#f0eeff;}
+.sz-kat-ikon{font-size:1.9rem;margin-bottom:7px;}
+.sz-kat-nama{font-size:.82rem;font-weight:600;}
+
+/* ── FILTER ── */
+.sz-filter{
+  display:flex;gap:10px;align-items:center;
+  flex-wrap:wrap;margin-bottom:24px;padding-top:28px;
+}
+.sz-chip{
+  padding:8px 16px;border-radius:50px;
+  border:2px solid var(--border);background:var(--kartu);
+  font-size:.83rem;font-weight:600;cursor:pointer;transition:all .2s;
+}
+.sz-chip:hover,.sz-chip.aktif{border-color:var(--primer);background:var(--primer);color:#fff;}
+.sz-urut{
+  margin-left:auto;padding:9px 14px;border-radius:50px;
+  border:2px solid var(--border);background:var(--kartu);
+  font-size:.85rem;font-weight:600;color:var(--teks);
+  cursor:pointer;outline:none;
+}
+
+/* ── GRID PRODUK ── */
+.sz-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(240px,1fr));
+  gap:20px;padding-bottom:60px;
+}
+.sz-kartu-produk{
+  background:var(--kartu);border-radius:var(--radius);
+  border:1px solid var(--border);overflow:hidden;
+  transition:transform .2s,box-shadow .2s;position:relative;
+}
+.sz-kartu-produk:hover{transform:translateY(-5px);box-shadow:var(--bayangan);}
+.sz-gambar-produk{
+  width:100%;height:190px;
+  background:linear-gradient(135deg,#f0eeff,#ffe4ed);
+  display:flex;align-items:center;justify-content:center;
+  font-size:4.5rem;position:relative;
+}
+.sz-label{
+  position:absolute;top:10px;left:10px;
+  background:var(--aksen);color:#fff;
+  font-size:.7rem;font-weight:700;padding:4px 10px;border-radius:50px;
+}
+.sz-btn-suka{
+  position:absolute;top:10px;right:10px;
+  background:rgba(255,255,255,.9);border:none;border-radius:50%;
+  width:34px;height:34px;font-size:1rem;cursor:pointer;
+  display:flex;align-items:center;justify-content:center;
+  transition:background .2s;
+}
+.sz-btn-suka:hover{background:#fff;}
+.sz-info-produk{padding:16px;}
+.sz-kat-produk{font-size:.73rem;color:var(--primer);font-weight:700;text-transform:uppercase;letter-spacing:.5px;margin-bottom:5px;}
+.sz-nama-produk{font-size:.97rem;font-weight:700;margin-bottom:7px;line-height:1.35;}
+.sz-bintang{color:#f5a623;font-size:.83rem;margin-bottom:9px;}
+.sz-bintang span{color:var(--redup);margin-left:4px;font-size:.78rem;}
+.sz-footer-produk{display:flex;align-items:center;justify-content:space-between;margin-top:12px;}
+.sz-harga{font-size:1.25rem;font-weight:900;color:var(--primer);}
+.sz-harga-lama{font-size:.82rem;color:var(--redup);text-decoration:line-through;margin-right:5px;}
+.sz-btn-keranjang{
+  background:var(--primer);color:#fff;border:none;
+  border-radius:50px;padding:9px 16px;font-size:.83rem;
+  font-weight:700;cursor:pointer;transition:background .2s,transform .15s;
+  white-space:nowrap;
+}
+.sz-btn-keranjang:hover{background:var(--primer-gelap);transform:scale(1.04);}
+.sz-btn-keranjang.ditambah{background:var(--sukses);}
+
+/* ── KERANJANG SIDEBAR ── */
+.sz-overlay{
+  position:fixed;inset:0;background:rgba(0,0,0,.45);
+  z-index:2000;opacity:0;pointer-events:none;transition:opacity .3s;
+}
+.sz-overlay.buka{opacity:1;pointer-events:all;}
+.sz-keranjang{
+  position:fixed;right:0;top:0;bottom:0;
+  width:380px;max-width:100vw;background:#fff;
+  box-shadow:-6px 0 36px rgba(0,0,0,.12);
+  z-index:2001;transform:translateX(100%);
+  transition:transform .35s cubic-bezier(.4,0,.2,1);
+  display:flex;flex-direction:column;
+}
+.sz-keranjang.buka{transform:translateX(0);}
+.sz-keranjang-header{
+  padding:22px;border-bottom:1px solid var(--border);
+  display:flex;align-items:center;justify-content:space-between;
+}
+.sz-keranjang-header h2{font-size:1.2rem;font-weight:800;}
+.sz-tutup{background:none;border:none;font-size:1.4rem;cursor:pointer;color:var(--redup);}
+.sz-keranjang-isi{flex:1;overflow-y:auto;padding:14px 22px;}
+.sz-item{
+  display:flex;gap:12px;align-items:center;
+  padding:14px 0;border-bottom:1px solid var(--border);
+}
+.sz-item-gambar{
+  width:62px;height:62px;border-radius:12px;
+  background:linear-gradient(135deg,#f0eeff,#ffe4ed);
+  display:flex;align-items:center;justify-content:center;
+  font-size:1.9rem;flex-shrink:0;
+}
+.sz-item-info{flex:1;}
+.sz-item-nama{font-weight:700;font-size:.9rem;margin-bottom:3px;}
+.sz-item-harga{color:var(--primer);font-weight:800;font-size:.92rem;}
+.sz-qty{display:flex;align-items:center;gap:8px;margin-top:7px;}
+.sz-qty-btn{
+  width:28px;height:28px;border-radius:50%;border:2px solid var(--border);
+  background:none;font-size:1rem;cursor:pointer;display:flex;
+  align-items:center;justify-content:center;font-weight:700;transition:all .2s;
+}
+.sz-qty-btn:hover{border-color:var(--primer);color:var(--primer);}
+.sz-qty-val{font-weight:700;min-width:20px;text-align:center;}
+.sz-hapus{background:none;border:none;color:var(--redup);cursor:pointer;font-size:1.05rem;padding:4px;}
+.sz-hapus:hover{color:var(--aksen);}
+.sz-keranjang-footer{padding:22px;border-top:1px solid var(--border);}
+.sz-baris{display:flex;justify-content:space-between;margin-bottom:8px;font-size:.9rem;}
+.sz-baris.total{font-size:1.05rem;font-weight:800;border-top:1px solid var(--border);padding-top:12px;margin-top:4px;}
+.sz-btn-checkout{
+  width:100%;background:var(--primer);color:#fff;border:none;
+  border-radius:50px;padding:15px;font-size:1rem;font-weight:800;
+  cursor:pointer;transition:background .2s;margin-top:14px;
+}
+.sz-btn-checkout:hover{background:var(--primer-gelap);}
+.sz-kosong{text-align:center;padding:60px 20px;color:var(--redup);}
+.sz-kosong .ikon-kosong{font-size:3.8rem;margin-bottom:14px;}
+
+/* ── MODAL CHECKOUT ── */
+.sz-modal-overlay{
+  position:fixed;inset:0;background:rgba(0,0,0,.5);
+  z-index:3000;display:flex;align-items:center;justify-content:center;
+  opacity:0;pointer-events:none;transition:opacity .3s;
+}
+.sz-modal-overlay.buka{opacity:1;pointer-events:all;}
+.sz-modal{
+  background:#fff;border-radius:22px;max-width:540px;width:93%;
+  padding:36px;transform:scale(.94);transition:transform .3s;
+  max-height:90vh;overflow-y:auto;
+}
+.sz-modal-overlay.buka .sz-modal{transform:scale(1);}
+.sz-modal h2{font-size:1.4rem;font-weight:900;margin-bottom:6px;}
+.sz-modal p{color:var(--redup);margin-bottom:22px;font-size:.9rem;}
+.sz-form-grup{margin-bottom:16px;}
+.sz-form-grup label{display:block;font-weight:600;font-size:.87rem;margin-bottom:5px;}
+.sz-form-grup input,.sz-form-grup select{
+  width:100%;padding:11px 14px;border:2px solid var(--border);
+  border-radius:12px;font-size:.93rem;outline:none;transition:border-color .2s;
+}
+.sz-form-grup input:focus,.sz-form-grup select:focus{border-color:var(--primer);}
+.sz-baris-form{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
+.sz-modal-footer{display:flex;gap:10px;margin-top:22px;}
+.sz-btn-batal{
+  background:var(--bg);color:var(--teks);border:2px solid var(--border);
+  border-radius:50px;padding:11px 24px;font-weight:700;cursor:pointer;
+}
+.sz-btn-pesan{
+  background:var(--primer);color:#fff;border:none;
+  border-radius:50px;padding:11px 24px;font-weight:700;
+  cursor:pointer;flex:1;font-size:.97rem;
+}
+.sz-btn-pesan:hover{background:var(--primer-gelap);}
+
+/* ── SUKSES ── */
+.sz-sukses{text-align:center;padding:10px 0;}
+.sz-sukses .ikon-sukses{font-size:3.8rem;margin-bottom:14px;}
+.sz-no-pesanan{font-size:.87rem;color:var(--redup);margin-top:6px;}
+
+/* ── TOAST ── */
+.sz-toast{
+  position:fixed;bottom:22px;left:50%;
+  transform:translateX(-50%) translateY(80px);
+  background:#2d2d3a;color:#fff;padding:13px 26px;border-radius:50px;
+  font-weight:700;font-size:.9rem;z-index:9999;
+  transition:transform .3s cubic-bezier(.4,0,.2,1);white-space:nowrap;
+  pointer-events:none;
+}
+.sz-toast.tampil{transform:translateX(-50%) translateY(0);}
+
+/* ── KEUNGGULAN ── */
+.sz-keunggulan{
+  background:#fff;border-top:1px solid var(--border);
+  border-bottom:1px solid var(--border);
+  padding:36px 16px;margin-top:60px;
+}
+.sz-keunggulan-in{
+  max-width:1300px;margin:auto;
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:24px;text-align:center;
+}
+.sz-unggulan-item .ikon{font-size:2.2rem;margin-bottom:10px;}
+.sz-unggulan-item h4{font-weight:800;margin-bottom:4px;font-size:.97rem;}
+.sz-unggulan-item p{font-size:.83rem;color:var(--redup);}
+
+/* ── PROMO BANNER ── */
+.sz-promo-box{
+  margin:50px 16px 0;max-width:1300px;margin-left:auto;margin-right:auto;
+  background:linear-gradient(135deg,#6c63ff,#ff6584);
+  border-radius:24px;padding:48px 36px;color:#fff;
+  display:flex;align-items:center;justify-content:space-between;
+  gap:24px;flex-wrap:wrap;
+}
+.sz-promo-box h2{font-size:2rem;font-weight:900;margin-bottom:8px;}
+.sz-promo-box p{opacity:.9;font-size:1rem;}
+.sz-btn-promo{
+  background:#fff;color:var(--primer);border:none;
+  border-radius:50px;padding:14px 32px;font-size:1rem;
+  font-weight:800;cursor:pointer;white-space:nowrap;
+  transition:transform .15s,box-shadow .15s;
+}
+.sz-btn-promo:hover{transform:scale(1.04);box-shadow:0 8px 24px rgba(0,0,0,.15);}
+
+/* ── FOOTER ── */
+.sz-footer{
+  background:#2d2d3a;color:rgba(255,255,255,.7);
+  padding:56px 16px 28px;margin-top:60px;
+}
+.sz-footer-in{max-width:1300px;margin:auto;}
+.sz-footer-grid{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
+  gap:36px;margin-bottom:44px;
+}
+.sz-footer-kol h4{color:#fff;font-weight:800;margin-bottom:14px;font-size:.97rem;}
+.sz-footer-kol a{
+  display:block;color:rgba(255,255,255,.6);
+  margin-bottom:9px;font-size:.88rem;transition:color .2s;
+}
+.sz-footer-kol a:hover{color:#fff;}
+.sz-footer-bawah{
+  border-top:1px solid rgba(255,255,255,.1);padding-top:24px;
+  display:flex;justify-content:space-between;align-items:center;
+  flex-wrap:wrap;gap:14px;font-size:.83rem;
+}
+.sz-sosial{display:flex;gap:12px;}
+.sz-sosial a{color:rgba(255,255,255,.6);font-size:1.25rem;transition:color .2s;}
+.sz-sosial a:hover{color:#fff;}
+
+/* ── RESPONSIF ── */
+@media(max-width:768px){
+  .sz-hero h1{font-size:2rem;}
+  .sz-stats-in{grid-template-columns:repeat(2,1fr);}
+  .sz-promo-box{text-align:center;justify-content:center;}
+  .sz-promo-box h2{font-size:1.6rem;}
+  .sz-grid{grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:14px;}
+  .sz-gambar-produk{height:150px;font-size:3.5rem;}
+  .sz-keranjang{width:100vw;}
+  .sz-baris-form{grid-template-columns:1fr;}
+}
+@media(max-width:480px){
+  .sz-header-in{gap:10px;}
+  .sz-hero{padding:50px 16px;}
+  .sz-hero h1{font-size:1.7rem;}
+  .sz-logo{font-size:1.35rem;}
+  .sz-stats-in{grid-template-columns:repeat(2,1fr);}
+  .sz-grid{grid-template-columns:repeat(2,1fr);gap:10px;}
+  .sz-gambar-produk{height:130px;font-size:3rem;}
+  .sz-info-produk{padding:10px;}
+  .sz-nama-produk{font-size:.87rem;}
+  .sz-harga{font-size:1.1rem;}
+  .sz-btn-keranjang{padding:8px 10px;font-size:.78rem;}
+  .sz-footer-grid{grid-template-columns:repeat(2,1fr);}
+  .sz-promo-box{padding:30px 20px;}
+}
+</style>
+
+<!-- ── MARKUP ── -->
+<div class="sz-banner">🎉 Gratis ongkir untuk pembelian di atas Rp 100.000 | Kode promo: <strong>HEMAT20</strong></div>
+
+<div class="sz-header">
+  <div class="sz-header-in">
+    <div class="sz-logo">Toko<span>Kami</span></div>
+    <div class="sz-search">
+      <input type="text" id="sz-cari" placeholder="Cari produk, merek…" oninput="szFilter()"/>
+      <button>🔍</button>
+    </div>
+    <div class="sz-aksi">
+      <button class="sz-btn-ikon" onclick="szToast('❤️ Wishlist segera hadir!')">❤️<span id="sz-badge-suka" class="sz-badge" style="display:none">0</span></button>
+      <button class="sz-btn-ikon" onclick="szBukaKeranjang()">🛒<span id="sz-badge-keranjang" class="sz-badge">0</span></button>
+    </div>
+  </div>
+</div>
+
+<div class="sz-hero">
+  <h1>✨ Belanja Terbaik, Harga Terjangkau!</h1>
+  <p>Ribuan produk pilihan dengan pengiriman cepat ke seluruh Indonesia</p>
+  <div class="sz-hero-btns">
+    <button class="sz-btn sz-btn-putih" onclick="document.querySelector('.sz-section').scrollIntoView({behavior:'smooth'})">Belanja Sekarang</button>
+    <button class="sz-btn sz-btn-outline" onclick="szToast('🔥 Flash sale setiap Jumat!')">Flash Sale</button>
+  </div>
+</div>
+
+<div class="sz-stats">
+  <div class="sz-stats-in">
+    <div class="sz-stat-item"><h3>50K+</h3><p>Produk Tersedia</p></div>
+    <div class="sz-stat-item"><h3>120K+</h3><p>Pelanggan Puas</p></div>
+    <div class="sz-stat-item"><h3>4.9★</h3><p>Rating Toko</p></div>
+    <div class="sz-stat-item"><h3>2 Jam</h3><p>Respons Rata-rata</p></div>
+  </div>
+</div>
+
+<div class="sz-section">
+  <h2 class="sz-judul">Belanja per Kategori</h2>
+  <p class="sz-sub">Temukan apa yang kamu cari dengan mudah</p>
+  <div class="sz-kategori" id="sz-kategori"></div>
+</div>
+
+<div class="sz-section">
+  <div class="sz-filter">
+    <span style="font-weight:700;font-size:.88rem;">Filter:</span>
+    <button class="sz-chip aktif" onclick="szSetFilter('semua',this)">Semua</button>
+    <button class="sz-chip" onclick="szSetFilter('diskon',this)">Diskon</button>
+    <button class="sz-chip" onclick="szSetFilter('terlaris',this)">Terlaris</button>
+    <button class="sz-chip" onclick="szSetFilter('baru',this)">Baru Tiba</button>
+    <select class="sz-urut" id="sz-urut" onchange="szRenderProduk()">
+      <option value="default">Urutkan: Default</option>
+      <option value="harga-asc">Harga: Murah ke Mahal</option>
+      <option value="harga-desc">Harga: Mahal ke Murah</option>
+      <option value="rating">Rating Terbaik</option>
+    </select>
+  </div>
+  <div class="sz-grid" id="sz-grid"></div>
+</div>
+
+<div class="sz-keunggulan">
+  <div class="sz-keunggulan-in">
+    <div class="sz-unggulan-item"><div class="ikon">🚚</div><h4>Gratis Ongkir</h4><p>Pembelian di atas Rp100rb</p></div>
+    <div class="sz-unggulan-item"><div class="ikon">🔒</div><h4>Pembayaran Aman</h4><p>SSL terenkripsi 256-bit</p></div>
+    <div class="sz-unggulan-item"><div class="ikon">🔄</div><h4>Retur Mudah</h4><p>30 hari garansi uang kembali</p></div>
+    <div class="sz-unggulan-item"><div class="ikon">💬</div><h4>CS 24/7</h4><p>Siap membantu kapan saja</p></div>
+  </div>
+</div>
+
+<div class="sz-promo-box">
+  <div>
+    <h2>🎁 Dapatkan Diskon 30%!</h2>
+    <p>Khusus member baru. Daftar sekarang dan nikmati promo eksklusif.</p>
+  </div>
+  <button class="sz-btn-promo" onclick="szToast('🎉 Kode: MEMBER30 berhasil disalin!')">Klaim Diskon</button>
+</div>
+
+<div class="sz-footer">
+  <div class="sz-footer-in">
+    <div class="sz-footer-grid">
+      <div class="sz-footer-kol">
+        <h4>🛍️ TokoKami</h4>
+        <p style="font-size:.87rem;margin-bottom:10px;">Toko online terpercaya dengan produk berkualitas dan harga terbaik untuk semua kebutuhan kamu.</p>
+      </div>
+      <div class="sz-footer-kol">
+        <h4>Navigasi</h4>
+        <a href="#">Beranda</a><a href="#">Produk</a><a href="#">Promo</a><a href="#">Tentang Kami</a>
+      </div>
+      <div class="sz-footer-kol">
+        <h4>Bantuan</h4>
+        <a href="#">FAQ</a><a href="#">Info Pengiriman</a><a href="#">Retur Barang</a><a href="#">Hubungi Kami</a>
+      </div>
+      <div class="sz-footer-kol">
+        <h4>Legal</h4>
+        <a href="#">Kebijakan Privasi</a><a href="#">Syarat & Ketentuan</a><a href="#">Kebijakan Cookie</a>
+      </div>
+    </div>
+    <div class="sz-footer-bawah">
+      <span>© 2024 TokoKami. Hak cipta dilindungi.</span>
+      <div class="sz-sosial">
+        <a href="#" title="Facebook">📘</a>
+        <a href="#" title="Instagram">📸</a>
+        <a href="#" title="TikTok">🎵</a>
+        <a href="#" title="WhatsApp">💬</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Keranjang -->
+<div class="sz-overlay" id="sz-overlay" onclick="szTutupKeranjang()"></div>
+<div class="sz-keranjang" id="sz-keranjang">
+  <div class="sz-keranjang-header">
+    <h2>🛒 Keranjang Belanja</h2>
+    <button class="sz-tutup" onclick="szTutupKeranjang()">✕</button>
+  </div>
+  <div class="sz-keranjang-isi" id="sz-keranjang-isi"></div>
+  <div class="sz-keranjang-footer" id="sz-keranjang-footer"></div>
+</div>
+
+<!-- Modal Checkout -->
+<div class="sz-modal-overlay" id="sz-modal">
+  <div class="sz-modal" id="sz-modal-konten">
+    <h2>🚀 Checkout</h2>
+    <p>Isi detail pesananmu di bawah ini</p>
+    <div class="sz-baris-form">
+      <div class="sz-form-grup"><label>Nama Depan</label><input type="text" placeholder="Budi"/></div>
+      <div class="sz-form-grup"><label>Nama Belakang</label><input type="text" placeholder="Santoso"/></div>
+    </div>
+    <div class="sz-form-grup"><label>Email</label><input type="email" placeholder="budi@email.com"/></div>
+    <div class="sz-form-grup"><label>Nomor HP / WhatsApp</label><input type="text" placeholder="08xxxxxxxxxx"/></div>
+    <div class="sz-form-grup"><label>Alamat Lengkap</label><input type="text" placeholder="Jl. Merdeka No. 123"/></div>
+    <div class="sz-baris-form">
+      <div class="sz-form-grup"><label>Kota</label><input type="text" placeholder="Jakarta"/></div>
+      <div class="sz-form-grup"><label>Kode Pos</label><input type="text" placeholder="10110"/></div>
+    </div>
+    <div class="sz-form-grup">
+      <label>Metode Pengiriman</label>
+      <select><option>JNE Regular (2-3 hari)</option><option>JNE YES (1 hari)</option><option>SiCepat (1-2 hari)</option><option>Gojek Instant (2 jam)</option></select>
+    </div>
+    <hr style="margin:20px 0;border-color:var(--border)"/>
+    <h3 style="margin-bottom:14px;font-size:1.05rem;">💳 Metode Pembayaran</h3>
+    <div class="sz-form-grup">
+      <select id="sz-metode-bayar" onchange="szToggleBayar()">
+        <option value="kartu">Kartu Kredit / Debit</option>
+        <option value="transfer">Transfer Bank</option>
+        <option value="dompet">Dompet Digital (OVO/GoPay/DANA)</option>
+        <option value="cod">Bayar di Tempat (COD)</option>
+      </select>
+    </div>
+    <div id="sz-detail-bayar">
+      <div class="sz-form-grup"><label>Nomor Kartu</label><input type="text" placeholder="4242 4242 4242 4242" maxlength="19" oninput="szFormatKartu(this)"/></div>
+      <div class="sz-baris-form">
+        <div class="sz-form-grup"><label>Kadaluarsa</label><input type="text" placeholder="MM/YY" maxlength="5"/></div>
+        <div class="sz-form-grup"><label>CVV</label><input type="text" placeholder="123" maxlength="3"/></div>
+      </div>
+    </div>
+    <div class="sz-modal-footer">
+      <button class="sz-btn-batal" onclick="szTutupModal()">Batal</button>
+      <button class="sz-btn-pesan" onclick="szBuatPesanan()">Buat Pesanan 🎉</button>
+    </div>
+  </div>
+</div>
+
+<!-- Toast -->
+<div class="sz-toast" id="sz-toast"></div>
+
+<script>
+(function(){
+// ── DATA ──
+var KATEGORI=[
+  {id:'semua',ikon:'🏪',nama:'Semua'},
+  {id:'elektronik',ikon:'📱',nama:'Elektronik'},
+  {id:'fashion',ikon:'👗',nama:'Fashion'},
+  {id:'rumah',ikon:'🏠',nama:'Rumah & Living'},
+  {id:'olahraga',ikon:'⚽',nama:'Olahraga'},
+  {id:'kecantikan',ikon:'💄',nama:'Kecantikan'},
+  {id:'buku',ikon:'📚',nama:'Buku'},
+  {id:'mainan',ikon:'🧸',nama:'Mainan'},
+];
+var PRODUK=[
+  {id:1,nama:'Headphone Bluetooth Noise-Cancelling',kat:'elektronik',ikon:'🎧',harga:299000,hargaLama:499000,rating:4.8,ulasan:2341,label:'DISKON',tag:['diskon']},
+  {id:2,nama:'Kemeja Kasual Slim Fit Pria',kat:'fashion',ikon:'👔',harga:189000,hargaLama:null,rating:4.5,ulasan:892,label:null,tag:['baru']},
+  {id:3,nama:'Lampu Meja LED Smart Touch',kat:'rumah',ikon:'💡',harga:145000,hargaLama:220000,rating:4.7,ulasan:1203,label:'HOT',tag:['diskon','terlaris']},
+  {id:4,nama:'Sepatu Lari Pro Series',kat:'olahraga',ikon:'👟',harga:450000,hargaLama:599000,rating:4.9,ulasan:3102,label:'DISKON',tag:['diskon','terlaris']},
+  {id:5,nama:'Serum Vitamin C Glowing Skin',kat:'kecantikan',ikon:'✨',harga:89000,hargaLama:null,rating:4.6,ulasan:756,label:'BARU',tag:['baru']},
+  {id:6,nama:'Smart TV 43" Full HD Android',kat:'elektronik',ikon:'📺',harga:2499000,hargaLama:3299000,rating:4.8,ulasan:5421,label:'DISKON',tag:['diskon','terlaris']},
+  {id:7,nama:'Atomic Habits — James Clear',kat:'buku',ikon:'📖',harga:95000,hargaLama:null,rating:4.4,ulasan:432,label:null,tag:['baru']},
+  {id:8,nama:'LEGO City Set 500 Pcs',kat:'mainan',ikon:'🏗️',harga:349000,hargaLama:449000,rating:4.9,ulasan:1876,label:'HOT',tag:['diskon','terlaris']},
+  {id:9,nama:'Mechanical Gaming Keyboard RGB',kat:'elektronik',ikon:'⌨️',harga:379000,hargaLama:519000,rating:4.7,ulasan:2109,label:'DISKON',tag:['diskon']},
+  {id:10,nama:'Matras Yoga Premium 6mm',kat:'olahraga',ikon:'🧘',harga:185000,hargaLama:null,rating:4.5,ulasan:611,label:'BARU',tag:['baru']},
+  {id:11,nama:'Diffuser Aromaterapi Kayu',kat:'rumah',ikon:'🕯️',harga:129000,hargaLama:189000,rating:4.6,ulasan:889,label:null,tag:['diskon']},
+  {id:12,nama:'Sunscreen SPF 50 PA++++',kat:'kecantikan',ikon:'🌞',harga:75000,hargaLama:null,rating:4.3,ulasan:344,label:'BARU',tag:['baru']},
+  {id:13,nama:'Tas Ransel Laptop 15.6"',kat:'fashion',ikon:'🎒',harga:259000,hargaLama:359000,rating:4.7,ulasan:1540,label:'DISKON',tag:['diskon','terlaris']},
+  {id:14,nama:'Blender Portable Mini USB',kat:'rumah',ikon:'🥤',harga:199000,hargaLama:null,rating:4.4,ulasan:678,label:'BARU',tag:['baru']},
+  {id:15,nama:'Sepeda Lipat 20 inch',kat:'olahraga',ikon:'🚲',harga:1850000,hargaLama:2299000,rating:4.8,ulasan:423,label:'DISKON',tag:['diskon']},
+  {id:16,nama:'Smartwatch Fitness Tracker',kat:'elektronik',ikon:'⌚',harga:599000,hargaLama:799000,rating:4.6,ulasan:2877,label:'HOT',tag:['diskon','terlaris']},
+];
+
+// ── STATE ──
+var keranjang=[];
+var kategoriAktif='semua';
+var filterAktif='semua';
+var sukaSaya=new Set();
+var kataCari='';
+
+function formatRupiah(n){return'Rp '+n.toLocaleString('id-ID');}
+function bintang(r){return'★'.repeat(Math.round(r))+'☆'.repeat(5-Math.round(r));}
+
+// KATEGORI
+function renderKategori(){
+  var el=document.getElementById('sz-kategori');
+  el.innerHTML=KATEGORI.map(function(c){
+    return'<div class="sz-kat-kartu'+(c.id===kategoriAktif?' aktif':'')+'" onclick="szSetKat(\''+c.id+'\')">'+
+      '<div class="sz-kat-ikon">'+c.ikon+'</div>'+
+      '<div class="sz-kat-nama">'+c.nama+'</div></div>';
+  }).join('');
+}
+window.szSetKat=function(id){kategoriAktif=id;renderKategori();szRenderProduk();};
+
+// FILTER
+window.szSetFilter=function(f,el){
+  filterAktif=f;
+  document.querySelectorAll('.sz-chip').forEach(function(c){c.classList.remove('aktif');});
+  el.classList.add('aktif');
+  szRenderProduk();
+};
+window.szFilter=function(){kataCari=document.getElementById('sz-cari').value.toLowerCase();szRenderProduk();};
+
+function getProduk(){
+  var p=PRODUK.slice();
+  if(kategoriAktif!=='semua') p=p.filter(function(x){return x.kat===kategoriAktif;});
+  if(filterAktif==='diskon') p=p.filter(function(x){return x.tag.indexOf('diskon')>-1;});
+  if(filterAktif==='terlaris') p=p.filter(function(x){return x.tag.indexOf('terlaris')>-1;});
+  if(filterAktif==='baru') p=p.filter(function(x){return x.tag.indexOf('baru')>-1;});
+  if(kataCari) p=p.filter(function(x){return x.nama.toLowerCase().indexOf(kataCari)>-1;});
+  var u=document.getElementById('sz-urut').value;
+  if(u==='harga-asc') p.sort(function(a,b){return a.harga-b.harga;});
+  if(u==='harga-desc') p.sort(function(a,b){return b.harga-a.harga;});
+  if(u==='rating') p.sort(function(a,b){return b.rating-a.rating;});
+  return p;
+}
+
+window.szRenderProduk=function(){
+  var grid=document.getElementById('sz-grid');
+  var prod=getProduk();
+  if(!prod.length){
+    grid.innerHTML='<div style="grid-column:1/-1;text-align:center;padding:70px 20px;color:var(--redup)"><div style="font-size:3rem;margin-bottom:14px">🔍</div><p style="font-weight:600;font-size:1.05rem">Produk tidak ditemukan</p></div>';
+    return;
+  }
+  grid.innerHTML=prod.map(function(p){
+    return'<div class="sz-kartu-produk">'+
+      '<div class="sz-gambar-produk">'+
+        (p.label?'<span class="sz-label">'+p.label+'</span>':'')+
+        '<button class="sz-btn-suka'+(sukaSaya.has(p.id)?' liked':'')+'" onclick="szToggleSuka('+p.id+',this)">'+(sukaSaya.has(p.id)?'❤️':'🤍')+'</button>'+
+        '<span>'+p.ikon+'</span>'+
+      '</div>'+
+      '<div class="sz-info-produk">'+
+        '<div class="sz-kat-produk">'+p.kat+'</div>'+
+        '<div class="sz-nama-produk">'+p.nama+'</div>'+
+        '<div class="sz-bintang">'+bintang(p.rating)+'<span>('+p.ulasan.toLocaleString('id-ID')+')</span></div>'+
+        '<div class="sz-footer-produk">'+
+          '<div>'+(p.hargaLama?'<span class="sz-harga-lama">'+formatRupiah(p.hargaLama)+'</span>':'')+
+          '<span class="sz-harga">'+formatRupiah(p.harga)+'</span></div>'+
+          '<button class="sz-btn-keranjang" id="sz-b-'+p.id+'" onclick="szTambah('+p.id+')">+ Keranjang</button>'+
+        '</div>'+
+      '</div>'+
+    '</div>';
+  }).join('');
+};
+
+// KERANJANG
+window.szTambah=function(id){
+  var prod=PRODUK.find(function(p){return p.id===id;});
+  var ada=keranjang.find(function(i){return i.id===id;});
+  if(ada) ada.qty++;
+  else keranjang.push(Object.assign({},prod,{qty:1}));
+  updateBadge();
+  var b=document.getElementById('sz-b-'+id);
+  if(b){b.textContent='✓ Ditambah';b.classList.add('ditambah');setTimeout(function(){b.textContent='+ Keranjang';b.classList.remove('ditambah');},1500);}
+  szToast(prod.ikon+' '+prod.nama+' ditambahkan!');
+};
+
+function updateBadge(){
+  var total=keranjang.reduce(function(s,i){return s+i.qty;},0);
+  document.getElementById('sz-badge-keranjang').textContent=total;
+}
+
+window.szBukaKeranjang=function(){renderKeranjang();document.getElementById('sz-overlay').classList.add('buka');document.getElementById('sz-keranjang').classList.add('buka');};
+window.szTutupKeranjang=function(){document.getElementById('sz-overlay').classList.remove('buka');document.getElementById('sz-keranjang').classList.remove('buka');};
+
+function renderKeranjang(){
+  var el=document.getElementById('sz-keranjang-isi');
+  var footer=document.getElementById('sz-keranjang-footer');
+  if(!keranjang.length){
+    el.innerHTML='<div class="sz-kosong"><div class="ikon-kosong">🛒</div><p style="font-weight:600">Keranjang masih kosong</p><p style="font-size:.82rem;margin-top:8px">Yuk tambahkan produk favoritmu!</p></div>';
+    footer.innerHTML='';return;
+  }
+  el.innerHTML=keranjang.map(function(item){
+    return'<div class="sz-item">'+
+      '<div class="sz-item-gambar">'+item.ikon+'</div>'+
+      '<div class="sz-item-info">'+
+        '<div class="sz-item-nama">'+item.nama+'</div>'+
+        '<div class="sz-item-harga">'+formatRupiah(item.harga*item.qty)+'</div>'+
+        '<div class="sz-qty">'+
+          '<button class="sz-qty-btn" onclick="szUbahQty('+item.id+',-1)">−</button>'+
+          '<span class="sz-qty-val">'+item.qty+'</span>'+
+          '<button class="sz-qty-btn" onclick="szUbahQty('+item.id+',1)">+</button>'+
+        '</div>'+
+      '</div>'+
+      '<button class="sz-hapus" onclick="szHapus('+item.id+')">🗑️</button>'+
+    '</div>';
+  }).join('');
+  var sub=keranjang.reduce(function(s,i){return s+i.harga*i.qty;},0);
+  var ongkir=sub>100000?0:15000;
+  var total=sub+ongkir;
+  footer.innerHTML='<div>'+
+    '<div class="sz-baris"><span>Subtotal</span><span>'+formatRupiah(sub)+'</span></div>'+
+    '<div class="sz-baris"><span>Ongkir</span><span>'+(ongkir===0?'<span style="color:var(--sukses)">GRATIS</span>':formatRupiah(ongkir))+'</span></div>'+
+    '<div class="sz-baris total"><span>Total</span><span>'+formatRupiah(total)+'</span></div>'+
+  '</div>'+
+  '<button class="sz-btn-checkout" onclick="szBukaCheckout()">🚀 Lanjut Pembayaran</button>';
+}
+
+window.szUbahQty=function(id,d){
+  var item=keranjang.find(function(i){return i.id===id;});
+  if(!item)return;
+  item.qty=Math.max(1,item.qty+d);
+  updateBadge();renderKeranjang();
+};
+window.szHapus=function(id){
+  keranjang=keranjang.filter(function(i){return i.id!==id;});
+  updateBadge();renderKeranjang();
+};
+
+// WISHLIST
+window.szToggleSuka=function(id,btn){
+  if(sukaSaya.has(id)){sukaSaya.delete(id);btn.textContent='🤍';btn.classList.remove('liked');}
+  else{sukaSaya.add(id);btn.textContent='❤️';btn.classList.add('liked');szToast('❤️ Ditambahkan ke wishlist!');}
+  var b=document.getElementById('sz-badge-suka');
+  b.textContent=sukaSaya.size;b.style.display=sukaSaya.size?'flex':'none';
+};
+
+// CHECKOUT
+window.szBukaCheckout=function(){szTutupKeranjang();document.getElementById('sz-modal').classList.add('buka');};
+window.szTutupModal=function(){document.getElementById('sz-modal').classList.remove('buka');};
+window.szToggleBayar=function(){
+  var v=document.getElementById('sz-metode-bayar').value;
+  document.getElementById('sz-detail-bayar').style.display=v==='kartu'?'block':'none';
+};
+window.szFormatKartu=function(input){
+  var v=input.value.replace(/\D/g,'').substring(0,16);
+  input.value=v.replace(/(.{4})/g,'$1 ').trim();
+};
+window.szBuatPesanan=function(){
+  var no='TK-'+Math.random().toString(36).substr(2,8).toUpperCase();
+  document.getElementById('sz-modal-konten').innerHTML=
+    '<div class="sz-sukses">'+
+      '<div class="ikon-sukses">🎉</div>'+
+      '<h2>Pesanan Berhasil!</h2>'+
+      '<p>Terima kasih sudah belanja di TokoKami. Pesananmu sedang diproses dan akan segera dikirimkan.</p>'+
+      '<div class="sz-no-pesanan">No. Pesanan: <strong>'+no+'</strong></div>'+
+      '<br/>'+
+      '<button class="sz-btn-pesan" style="width:100%;margin-top:14px" onclick="szTutupModal();szResetPesanan()">Lanjut Belanja</button>'+
+    '</div>';
+};
+window.szResetPesanan=function(){
+  keranjang=[];updateBadge();
+  // reset modal (sederhana)
+};
+document.getElementById('sz-modal').addEventListener('click',function(e){if(e.target===this)szTutupModal();});
+
+// TOAST
+var szToastTimer;
+window.szToast=function(pesan){
+  var t=document.getElementById('sz-toast');
+  t.textContent=pesan;t.classList.add('tampil');
+  clearTimeout(szToastTimer);
+  szToastTimer=setTimeout(function(){t.classList.remove('tampil');},3000);
+};
+
+// INIT
+renderKategori();
+szRenderProduk();
+})();
+</script>
